@@ -1,0 +1,40 @@
+/* Reset Browser Defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* navbar */
+.navbar {
+  background: #afafaf;
+  padding: 0 2rem;
+}
+
+.navbar li {
+  list-style: none;
+}
+
+.navbar a {
+  text-transform: capitalize;
+  display: block;
+  padding: 1rem 0;
+  letter-spacing: 0.2rem;
+}
+
+.navbar a:hover {
+  color: #222;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar ul {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .navbar a {
+    text-align: center;
+  }
+}
